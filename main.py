@@ -49,12 +49,51 @@ def operacao(string, file):
       f"{operadores.get(string)}: conjunto 1: {{{listaA_formato}}}, conjunto 2: {{{listaB_formato}}}. Resultado: {{{resultado_formato}}}"
     )
     print()
-      
+
+
+#EXEMPLO 1: arquivo 1
 with open("text.txt") as file:
+  print('Arquivo 1')
 
   for line in file:
-    listaA = {}
-    listaB = {}
+
+    if 'U' in line:
+      operacao('U', file)
+      
+    elif 'I' in line:
+      operacao('I', file)
+      
+    elif 'C' in line:
+      operacao('C', file)
+      
+    elif 'D' in line:
+      operacao('D', file)
+
+
+#EXEMPLO 2: arquivo 2
+with open("text2.txt") as file:
+  print('Arquivo 2')
+
+  for line in file:
+    
+    if 'U' in line:
+      operacao('U', file)
+      
+    elif 'I' in line:
+      operacao('I', file)
+      
+    elif 'C' in line:
+      operacao('C', file)
+      
+    elif 'D' in line:
+      operacao('D', file)
+
+
+#EXEMPLO 3: arquivo 3
+with open("text3.txt") as file:
+  print('Arquivo 3')
+
+  for line in file:
     
     if 'U' in line:
       operacao('U', file)
